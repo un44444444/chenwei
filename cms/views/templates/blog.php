@@ -22,19 +22,21 @@ else
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
 	<meta name="keywords" content="chenw" /> 
 	<meta name="description" content="chenw home page" /> 
-<style type="text/css"> 
-	html,body {width:100%;height:100%;}
-	* {margin:0;padding:0;}
-	div.wide_row {width:100%;}
-	div#header {height:60px;position:absolute;background:blue;}
-	div#maincontent {height:auto;top:60px;bottom:56px;overflow:auto;position:absolute;background:#eee}
-	div#sidebar {float:left;width:160px;height:100%;background:red}
-	div#content {float:right;width:auto;height:100%;min-width:300px;left:160px;right:0px;position:absolute;background:yellow}
-	div#footer {height:56px;bottom:0px;position:absolute;background:green}
+<style type="text/css">
+	div#header {height:80px;background:blue;}
+	div#maincontent {width:100%;min-width:300px;background:#eee;}
+	div#contentwrapper {float:left;width:100%;background:#eee;}
+	div#sidebar_left {float:left;width:0px;margin-left: -100%;background:pink;}
+	div#sidebar {float:left;width:200px;margin-left: -200px;background:red;}
+	div#content {margin:0 200px 0 0;background:yellow;}
+	div#footer {height:56px;background:green;clear:left;}
 </style> 
 </head> 
 <body> 
-	<div id="header" class="wide_row"></div> 
+	<div id="header" class="wide_row">
+		<div><h2>LOGO</h2></div>
+		<span><a>菜单1</a><a>菜单2</a></span>
+	</div> 
 	<div id="maincontent" class="wide_row"> 
 <?php echo $content;?>
 	</div> 
